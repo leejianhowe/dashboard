@@ -1,0 +1,15 @@
+.layout {
+}
+
+.navbar {
+  /* sidebar / desktop */
+  position: absolute;
+  width: 255px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  /* sidebar / bg */
+  background: #363740;
+}
+.content {
+}

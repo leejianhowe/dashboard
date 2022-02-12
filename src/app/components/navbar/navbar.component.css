@@ -1,0 +1,50 @@
+.logo {
+  height: 32px;
+  width: 32px;
+  border-radius: 0px;
+  margin: 0 0.5rem 0 0.5rem;
+}
+.header {
+  margin: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #a4a6b3;
+  opacity: 70%;
+}
+
+.nav-item {
+  height: 56px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  color: #a4a6b3;
+}
+
+.nav-item.selected {
+  color: #dde2ff;
+  border-width: 3px;
+  border-color: #dde2ff;
+  border-left-style: solid;
+}
+
+.nav-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 0.5rem 0 0.5rem;
+}
+.nav-text {
+  margin: 0 1.5rem 0 1rem;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.divider {
+  border: 1px solid #dfe0eb;
+  opacity: 6%;
+}
