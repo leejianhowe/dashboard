@@ -10,16 +10,19 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent implements OnInit {
   header: string = '';
   routerSubscription: Subscription;
+  hasNotifications: boolean = false;
+  iconHeight: string = '1rem';
+  iconWidth: string = '1rem';
   constructor(private router: Router) {}
   ngOnInit() {
     this.routerSubscription = this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-
-        this.header = event.url.split("/")[1];
+        this.header = event.url.split('/')[1];
       });
+    this.hasNotifications = true;
   }
   ngOnDestroy() {
-    this.routerSubscription.unsubscribe()
+    this.routerSubscription.unsubscribe();
   }
 }

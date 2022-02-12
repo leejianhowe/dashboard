@@ -1,7 +1,50 @@
-.header{
+.header {
   margin: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .header-name {
   text-transform: capitalize;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.accounts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.spacing {
+  margin-right: 1rem;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  border-left: solid 1px #dfe0eb;
+  padding-left: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 2rem;
+  text-align: center
+}
+.name{
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-right: 0.875rem;
+}
+img {
+  border-radius: 50%;
+  border: 1.5px solid #DFE0EB;
+  height: 40px;
+  width: 40px;
+}
+.icon{
+  color: #C5C7CD;
+  height: 1rem;
+  width: 1rem;
 }

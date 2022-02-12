@@ -1,6 +1,13 @@
 <div class="header">
-  <h3 class="header-name">{{ header }}</h3>
+  <p class="header-name">{{ header }}</p>
   <div class="accounts">
-    <span></span>
+    <div class="left">
+      <mat-icon class="spacing" [ngStyle]="{ height: iconHeight, width: iconWidth }">search</mat-icon>
+      <mat-icon class="icon spacing" matBadgeSize="small">notifications</mat-icon>
+    </div>
+    <div class="right">
+      <p class="name">Jones Ferdinand</p>
+      <img src="assets/profile.png" alt="" />
+    </div>
   </div>
 </div>

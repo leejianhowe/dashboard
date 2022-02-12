@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { IconOverview } from './components/icons/overview/overview.component';
 import { IconTickets } from './components/icons/tickets/tickets.component';
+import { IconSearch } from './components/icons/search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { IconTickets } from './components/icons/tickets/tickets.component';
     HeaderComponent,
     IconOverview,
     IconTickets,
+    IconSearch
   ],
   imports: [
     BrowserModule,
