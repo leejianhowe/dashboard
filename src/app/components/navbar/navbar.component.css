@@ -26,21 +26,25 @@
   color: #a4a6b3;
 }
 
-.nav-item.selected {
+.selected {
   color: #dde2ff;
   border-width: 3px;
   border-color: #dde2ff;
   border-left-style: solid;
 }
 
+.selected > .nav-icon {
+  opacity: 1;
+}
 .nav-icon {
-  width: 16px;
-  height: 16px;
+  height: 1rem;
+  width: 1rem;
   margin: 0 0.5rem 0 0.5rem;
+  opacity: 0.4;
 }
 .nav-text {
   margin: 0 1.5rem 0 1rem;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
 }
 

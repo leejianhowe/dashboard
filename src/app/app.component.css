@@ -1,4 +1,13 @@
-.layout {
+.content {
+  /* bg */
+  position: absolute;
+  left: 255px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  /* grayscale / bg */
+  background: #f7f8fc;
 }
 
 .navbar {
@@ -10,6 +19,4 @@
   top: 0px;
   /* sidebar / bg */
   background: #363740;
-}
-.content {
 }
