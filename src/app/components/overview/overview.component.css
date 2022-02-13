@@ -1,0 +1,38 @@
+.card {
+  width: 258px;
+  height: 134px;
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.card-title {
+  text-align: center;
+  font-size: 1.1875rem;
+  font-style: normal;
+  letter-spacing: 0.4px;
+  color: #9fa2b4;
+  margin-bottom: 0.75rem;
+}
+.card-content {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #252733;
+  text-align: center;
+}
+.selected > .card-title,
+.selected > .card-content {
+  color: #3751ff;
+}
+.selected {
+  border: 1px solid #3751ff;
+}
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 0 30px;
+}

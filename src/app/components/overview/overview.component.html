@@ -1,1 +1,11 @@
-<p>overview works!</p>
+<div class="row">
+  <mat-card
+    *ngFor="let item of ticketOverview.overview"
+    (click)="handleClick(item.id)"
+    [ngClass]="isSelected === item.id ? 'selected' : ''"
+    class="card"
+  >
+    <mat-card-title class="card-title">{{ item.title }}</mat-card-title>
+    <mat-card-content class="card-content">{{ item.content }}</mat-card-content>
+  </mat-card>
+</div>

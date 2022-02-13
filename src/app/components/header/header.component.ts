@@ -10,9 +10,10 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent implements OnInit {
   header: string = '';
   routerSubscription: Subscription;
-  hasNotifications: boolean = false;
   iconHeight: string = '1rem';
   iconWidth: string = '1rem';
+  userName: string = ""
+  profileUrl: string = ''
   constructor(private router: Router) {}
   ngOnInit() {
     this.routerSubscription = this.router.events
@@ -20,7 +21,8 @@ export class HeaderComponent implements OnInit {
       .subscribe((event: NavigationEnd) => {
         this.header = event.url.split('/')[1];
       });
-    this.hasNotifications = true;
+    this.userName = "Jones Ferdinand"
+    this.profileUrl = "assets/profile.png"
   }
   ngOnDestroy() {
     this.routerSubscription.unsubscribe();

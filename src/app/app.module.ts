@@ -13,6 +13,7 @@ import { IconOverview } from './components/icons/overview/overview.component';
 import { IconTickets } from './components/icons/tickets/tickets.component';
 import { IconSearch } from './components/icons/search/search.component';
 import { IconNotifications } from './components/icons/notifications/notifications.component';
+import { CardComponent } from './components/card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { IconNotifications } from './components/icons/notifications/notification
     IconOverview,
     IconTickets,
     IconSearch,
-    IconNotifications
+    IconNotifications,
+    CardComponent
   ],
   imports: [
     BrowserModule,
