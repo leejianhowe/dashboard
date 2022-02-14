@@ -11,13 +11,13 @@
 .card-title {
   text-align: center;
   font-size: 1.1875rem;
-  font-style: normal;
   letter-spacing: 0.4px;
   color: #9fa2b4;
   margin-bottom: 0.75rem;
 }
 .card-content {
   font-size: 40px;
+  font-weight: bold;
   font-style: normal;
   line-height: 50px;
   letter-spacing: 1px;
@@ -35,4 +35,84 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   margin: 0 30px;
+}
+
+.overview-card {
+  margin: 2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #dfe0eb;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.header {
+  font-size: 1.1875rem;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.legend-item {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.legend {
+  display: flex;
+}
+.legend-accent {
+  border: 1px solid #3751ff;
+  width: 1rem;
+  background-color: #3751ff;
+  margin-right: 1rem;
+}
+.legend-grey {
+  border: 1px solid #9fa2b4;
+  width: 1rem;
+  background-color: #9fa2b4;
+  margin-right: 1rem;
+}
+.legend-text {
+  color: #9fa2b4;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #9fa2b4;
+}
+
+.stats {
+  padding: 1.5rem 2rem
+}
+.add-border{
+  border-bottom: 1px solid #dfe0eb;
+}
+
+.chart-left {
+  padding: 2rem ;
+  border-right: 1px solid #dfe0eb
+}
+
+.chart-right {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
+}
+.stats-content{
+  line-height: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.stats-title{
+  text-align: center;
+  line-height: 22px;
+  font-size: 1rem;
 }

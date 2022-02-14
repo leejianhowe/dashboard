@@ -6,6 +6,13 @@ export interface TicketOverview {
     dev_fix: number;
     pending: number;
   };
+  chart: {
+    stats: Stats[];
+  };
+}
+interface Stats {
+  title: string;
+  value: string;
 }
 interface IssueData {
   id: string;

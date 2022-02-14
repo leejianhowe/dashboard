@@ -7,6 +7,7 @@ import { TicketOverview } from '../types/Issue.type';
   styleUrls: ['./overview.component.css'],
 })
 export class OverviewComponent implements OnInit {
+  date: string = '';
   ticketOverview: TicketOverview = {
     overview: [
       { id: '1', title: 'Unresolved', content: '60' },
@@ -20,6 +21,30 @@ export class OverviewComponent implements OnInit {
       feature_req: 4238,
       pending: 281,
     },
+    chart: {
+      stats: [
+        {
+          title: 'Resolved',
+          value: '449',
+        },
+        {
+          title: 'Received',
+          value: '426',
+        },
+        {
+          title: 'Average first response time',
+          value: '33m',
+        },
+        {
+          title: 'Average response time',
+          value: '3h 8m',
+        },
+        {
+          title: 'Resolution within SLA',
+          value: '94%',
+        }
+      ],
+    },
   };
   isSelected: string = '';
   handleClick(id: string) {
@@ -27,5 +52,14 @@ export class OverviewComponent implements OnInit {
   }
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.date = new Date().toLocaleString('en-GB', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12:true
+    });
+  }
 }

@@ -9,3 +9,35 @@
     <mat-card-content class="card-content">{{ item.content }}</mat-card-content>
   </mat-card>
 </div>
+<div [ngClass]="'overview-card'">
+  <div [ngClass]="'chart-left'">
+    <div [ngClass]="'header'">Today's trends</div>
+    <div [ngClass]="'sub-header '">
+      <div>as of {{ date }}</div>
+      <div [ngClass]="'legend'">
+        <div [ngClass]="'legend-item'">
+          <span [ngClass]="'legend-accent'"></span>
+          <span [ngClass]="'legend-text'">Today</span>
+        </div>
+        <div [ngClass]="'legend-item'">
+          <span [ngClass]="'legend-grey'"></span>
+          <span [ngClass]="'legend-text'">Yesterday</span>
+        </div>
+      </div>
+    </div>
+    <app-overview-chart></app-overview-chart>
+  </div>
+  <div [ngClass]="'chart-right'">
+    <div
+      [ngClass]="{ 'stats': true, 'add-border': !isLast }"
+      *ngFor="let item of ticketOverview.chart.stats; last as isLast"
+    >
+      <div [ngClass]="'stats-title'">
+        {{ item.title }}
+      </div>
+      <div [ngClass]="'stats-content'">
+        {{ item.value }}
+      </div>
+    </div>
+  </div>
+</div>
