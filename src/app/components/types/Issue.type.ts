@@ -1,16 +1,11 @@
 export interface TicketOverview {
   overview: IssueData[];
-  unresolved: {
-    feature_req: number;
-    cust_res: number;
-    dev_fix: number;
-    pending: number;
-  };
+  unresolved: CardData[];
   chart: {
-    stats: Stats[];
+    stats: CardData[];
   };
 }
-interface Stats {
+export interface CardData {
   title: string;
   value: string;
 }

@@ -15,8 +15,12 @@ import { IconOverview } from './components/icons/overview/overview.component';
 import { IconTickets } from './components/icons/tickets/tickets.component';
 import { IconSearch } from './components/icons/search/search.component';
 import { IconNotifications } from './components/icons/notifications/notifications.component';
+import { IconAdd } from './components/icons/add/add.component';
 import { CardComponent } from './components/card/card.component';
 import { OverviewChartComponent } from './overview-chart/overview-chart.component';
+import { UnresolvedTicketCardComponent } from './components/unresolved-ticket-card/unresolved-ticket-card.component';
+import { CardHeaderComponent } from './components/card-header/card-header.component';
+import { TasksCardComponent } from './components/tasks-card/tasks-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,15 +32,19 @@ import { OverviewChartComponent } from './overview-chart/overview-chart.componen
     IconTickets,
     IconSearch,
     IconNotifications,
+    IconAdd,
     CardComponent,
-    OverviewChartComponent
+    OverviewChartComponent,
+    UnresolvedTicketCardComponent,
+    CardHeaderComponent,
+    TasksCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MaterialModule,
-    ChartsModule
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

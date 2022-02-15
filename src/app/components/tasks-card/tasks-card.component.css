@@ -1,0 +1,64 @@
+.card {
+  background: #ffffff;
+
+  border: 1px solid #dfe0eb;
+
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+::placeholder {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c5c7cd;
+}
+
+/* remove input border */
+input {
+  border: 0;
+}
+.no-outline:focus {
+  outline: none;
+}
+
+.create-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2rem 1rem;
+  border-bottom: solid 1px #dfe0eb;
+}
+/* custom checkbox */
+
+/* task */
+.task-list {
+}
+.task-item {
+  padding:1rem 2rem;
+  border-bottom: solid 1px #dfe0eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.urgent {
+  background-color: #fec400;
+  color: #fff;
+}
+.new {
+  background-color: #29cc97;
+  color: #fff;
+}
+.default {
+  background-color: #F0F1F7;
+  color: #9fa2b4;
+  font-weight: bold;
+  letter-spacing: 0.5 px;
+  line-height: 14px
+}
+
+.category {
+  border-radius: 8px;
+  font-size: 11px;
+  padding: 5px 12px;
+  text-transform: uppercase;
+}

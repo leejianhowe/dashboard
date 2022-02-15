@@ -1,10 +1,10 @@
 .content {
   /* bg */
-  position: absolute;
-  left: 255px;
-  right: 0px;
+  /* position: absolute; */
+  /* left: 255px; */
+  /* right: 0px;
   top: 0px;
-  bottom: 0px;
+  bottom: 0px; */
 
   /* grayscale / bg */
   background: #f7f8fc;
@@ -12,11 +12,17 @@
 
 .navbar {
   /* sidebar / desktop */
-  position: absolute;
-  width: 255px;
-  height: 100%;
-  left: 0px;
-  top: 0px;
+  /* position: absolute; */
+  /* width: 255px; */
+  /* height: 100%; */
+  /* left: 0px;
+  top: 0px; */
   /* sidebar / bg */
   background: #363740;
+}
+
+.layout {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 255px 1185px;
 }

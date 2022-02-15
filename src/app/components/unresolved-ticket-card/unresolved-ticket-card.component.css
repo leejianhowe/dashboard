@@ -1,0 +1,25 @@
+.card {
+  background: #ffffff;
+
+  border: 1px solid #dfe0eb;
+
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+}
+.issue-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2rem 18px 2rem;
+  border-bottom: 1px solid #dfe0eb;
+}
+.issue-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.issue-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #9fa2b4;
+}

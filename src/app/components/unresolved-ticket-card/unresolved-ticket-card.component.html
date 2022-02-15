@@ -1,0 +1,12 @@
+<div class="card">
+  <app-card-header
+    [group]="group"
+    [title]="title"
+    [subtitle]="subtitle"
+    [cta]="cta"
+  ></app-card-header>
+  <div [ngClass]="{'issue-item': true}" *ngFor="let item of data">
+    <div [ngClass]="'issue-title'">{{ item.title }}</div>
+    <div [ngClass]="'issue-value'">{{ item.value }}</div>
+  </div>
+</div>

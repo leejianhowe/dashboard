@@ -1,0 +1,25 @@
+.header{
+  margin: 2rem 2rem 0.5rem;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem
+}
+.header-sub {
+  font-size: 0.75rem;
+
+}
+.title {
+  font-size: 1.1875rem;
+  font-weight: bold;
+}
+
+.cta {
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #3751ff;
+}

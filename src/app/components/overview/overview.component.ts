@@ -15,12 +15,24 @@ export class OverviewComponent implements OnInit {
       { id: '3', title: 'Open', content: '43' },
       { id: '4', title: 'On hold', content: '64' },
     ],
-    unresolved: {
-      cust_res: 1005,
-      dev_fix: 914,
-      feature_req: 4238,
-      pending: 281,
-    },
+    unresolved: [
+      {
+        title: 'Waiting on Feature Request',
+        value: '4238',
+      },
+      {
+        title: 'Awaiting Customer Response',
+        value: '1005',
+      },
+      {
+        title: 'Awaiting Developer Fix',
+        value: '914',
+      },
+      {
+        title: 'Pending',
+        value: '281',
+      },
+    ],
     chart: {
       stats: [
         {
@@ -42,7 +54,7 @@ export class OverviewComponent implements OnInit {
         {
           title: 'Resolution within SLA',
           value: '94%',
-        }
+        },
       ],
     },
   };
@@ -59,7 +71,7 @@ export class OverviewComponent implements OnInit {
       day: 'numeric',
       hour: 'numeric',
       minute: 'numeric',
-      hour12:true
+      hour12: true,
     });
   }
 }

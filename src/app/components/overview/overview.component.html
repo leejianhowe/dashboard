@@ -2,8 +2,7 @@
   <mat-card
     *ngFor="let item of ticketOverview.overview"
     (click)="handleClick(item.id)"
-    [ngClass]="isSelected === item.id ? 'selected' : ''"
-    class="card"
+    [ngClass]="{ selected: isSelected === item.id, card: true }"
   >
     <mat-card-title class="card-title">{{ item.title }}</mat-card-title>
     <mat-card-content class="card-content">{{ item.content }}</mat-card-content>
@@ -29,7 +28,7 @@
   </div>
   <div [ngClass]="'chart-right'">
     <div
-      [ngClass]="{ 'stats': true, 'add-border': !isLast }"
+      [ngClass]="{ stats: true, 'add-border': !isLast }"
       *ngFor="let item of ticketOverview.chart.stats; last as isLast"
     >
       <div [ngClass]="'stats-title'">
@@ -40,4 +39,8 @@
       </div>
     </div>
   </div>
+</div>
+<div class="cards">
+  <app-unresolved-ticket-card [data]="ticketOverview.unresolved"></app-unresolved-ticket-card>
+  <app-tasks-card></app-tasks-card>
 </div>
