@@ -17,7 +17,7 @@ export interface UserData {
   numDate: string;
 
   lastupdated: string;
-  profileurl:string
+  profileurl: string;
 }
 
 const NAMES: string[] = [
@@ -75,7 +75,13 @@ const DATES: string[] = ['14 Feb 2022', '15 Feb 2022', '13 Feb 2022'];
   styleUrls: ['./table.component.css'],
 })
 export class TableComponent implements AfterViewInit {
-  displayedColumns: string[] = ['id', 'name', 'shortDate', 'priority','options'];
+  displayedColumns: string[] = [
+    'id',
+    'name',
+    'shortDate',
+    'priority',
+    'options',
+  ];
   dataSource: MatTableDataSource<UserData>;
   currentid: string;
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -127,11 +133,13 @@ function createNewUser(id: number): UserData {
     month: 'short',
     year: 'numeric',
   });
-  const numDate = reportedTime.toLocaleDateString('en-GB', {
-    day: 'numeric',
-    month: 'numeric',
-    year: 'numeric',
-  }).replace(/\//g,".");
+  const numDate = reportedTime
+    .toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'numeric',
+      year: 'numeric',
+    })
+    .replace(/\//g, '.');
 
   const time = reportedTime.toLocaleTimeString('en-US', {
     hour: 'numeric',
@@ -142,7 +150,9 @@ function createNewUser(id: number): UserData {
       ? `Updated ${Math.floor(numberOfDays)} day ago`
       : `Updated ${Math.floor(numberOfDays)} days ago`;
 
-  const profileurl = `https://ui-avatars.com/api/?name=${name.split(" ").join("+")}`
+  const profileurl = `https://ui-avatars.com/api/?name=${name
+    .split(' ')
+    .join('+')}`;
   return {
     id: id.toString(),
     name: name,
@@ -153,6 +163,6 @@ function createNewUser(id: number): UserData {
     time,
     lastupdated,
     numDate,
-    profileurl
+    profileurl,
   };
 }

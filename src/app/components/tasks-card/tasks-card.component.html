@@ -5,21 +5,33 @@
     [cta]="cta"
   ></app-card-header>
   <div class="create-task">
-    <input class="no-outline" type="text" placeholder="Create new task" />
-    <icon-add [iconHeight]="'1rem'" [iconWidth]="'1rem'"></icon-add>
+    <input
+      [(ngModel)]="name"
+      class="no-outline"
+      type="text"
+      placeholder="Create new task"
+    />
+    <icon-add
+      style="cursor: pointer"
+      (click)="createTask()"
+      [iconHeight]="'1rem'"
+      [iconWidth]="'1rem'"
+    ></icon-add>
   </div>
-  <div class="task-list">
+  <div>
     <div class="task-item" *ngFor="let item of data">
-      <span class="custom-checkbox">
+      <span class="left">
         <input
           type="checkbox"
           (click)="changeSelected(item.id)"
           [checked]="item.selected"
         />
-        <span class="checkmark"></span>
+        <div class="task-name">{{ item.name }}</div>
       </span>
-      <div>{{ item.task }}</div>
-      <div [ngClass]="[checkCategory(item.category),'category']">{{ item.category }}</div>
+
+      <div [ngClass]="[checkCategory(item.category), 'category']">
+        {{ item.category }}
+      </div>
     </div>
   </div>
 </div>

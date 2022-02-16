@@ -10,22 +10,23 @@ export class TasksCardComponent implements OnInit {
   subtitle: string = 'Today';
   showPrefix: boolean = false;
   cta: string = 'View All';
+  name: string = '';
   data = [
     {
-      id:'1',
-      task: 'Finish ticket update',
+      id: '1',
+      name: 'Finish ticket update',
       category: 'urgent',
       selected: false,
     },
     {
-      id:'2',
-      task: 'Create new ticket example',
+      id: '2',
+      name: 'Create new ticket example',
       category: 'new',
       selected: false,
     },
     {
-      id:'3',
-      task: 'Update ticket report',
+      id: '3',
+      name: 'Update ticket report',
       category: 'default',
       selected: true,
     },
@@ -40,10 +41,19 @@ export class TasksCardComponent implements OnInit {
         return 'default';
     }
   }
-  changeSelected(id){
-    const task = this.data.findIndex(ele=>ele.id === id)
-    if(task){
-      this.data[task].selected = !this.data[task].selected
+  createTask() {
+    this.data.push({
+      id: Date.now().toString(),
+      name: this.name,
+      category: 'default',
+      selected: false,
+    });
+    this.name = '';
+  }
+  changeSelected(id) {
+    const task = this.data.findIndex((ele) => ele.id === id);
+    if (task) {
+      this.data[task].selected = !this.data[task].selected;
     }
   }
   constructor() {}

@@ -31,10 +31,15 @@ input {
 /* custom checkbox */
 
 /* task */
-.task-list {
+.task-name {
+  color: #252733;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: left;
+  margin-left:1rem
 }
 .task-item {
-  padding:1rem 2rem;
+  padding: 1rem 2rem;
   border-bottom: solid 1px #dfe0eb;
   display: flex;
   justify-content: space-between;
@@ -49,11 +54,11 @@ input {
   color: #fff;
 }
 .default {
-  background-color: #F0F1F7;
+  background-color: #f0f1f7;
   color: #9fa2b4;
   font-weight: bold;
   letter-spacing: 0.5 px;
-  line-height: 14px
+  line-height: 14px;
 }
 
 .category {
@@ -61,4 +66,9 @@ input {
   font-size: 11px;
   padding: 5px 12px;
   text-transform: uppercase;
+}
+
+.left{
+  display: flex;
+  align-items: center;
 }
