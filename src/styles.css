@@ -15,20 +15,20 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 @font-face {
-  font-family: Mullish;
+  font-family: Mulish;
   src: url("assets/Mulish/static/Mulish-Regular.ttf") format("truetypefont");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: Mullish;
+  font-family: Mulish;
   src: url("assets/Mulish/static/Mulish-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Mullish;
+  font-family: Mulish;
   src: url("assets/Mulish/static/Mulish-Italic.ttf");
   font-weight: normal;
   font-style: italic;

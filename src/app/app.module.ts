@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { ChartsModule } from 'ng2-charts';
 import { MaterialModule } from './material.module';
@@ -21,6 +22,7 @@ import { OverviewChartComponent } from './overview-chart/overview-chart.componen
 import { UnresolvedTicketCardComponent } from './components/unresolved-ticket-card/unresolved-ticket-card.component';
 import { CardHeaderComponent } from './components/card-header/card-header.component';
 import { TasksCardComponent } from './components/tasks-card/tasks-card.component';
+import { TableComponent } from './components/table/table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +40,7 @@ import { TasksCardComponent } from './components/tasks-card/tasks-card.component
     UnresolvedTicketCardComponent,
     CardHeaderComponent,
     TasksCardComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,8 @@ import { TasksCardComponent } from './components/tasks-card/tasks-card.component
     NoopAnimationsModule,
     MaterialModule,
     ChartsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

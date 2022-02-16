@@ -1,0 +1,129 @@
+table {
+  width: 100%;
+
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+th {
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #9fa2b4;
+}
+.click td {
+  background-color: rgba(55, 81, 255, 0.04);
+}
+td {
+  cursor: pointer;
+}
+td.mat-cell {
+  padding: 1.5rem 0 1.5rem;
+}
+
+.layout {
+  margin: 2rem;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+}
+
+.priority {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 100px;
+}
+
+.title {
+  color: #252733;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.description {
+  color: #c5c7cd;
+  font-size: 0.75rem;
+}
+
+.ticket {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v125/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
+}
+
+.material-icons {
+  font-family: "Material Icons" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+  color: #c5c7cd;
+}
+
+.header-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.header-text {
+  color: #252733;
+  font-size: 1.1875rem;
+  font-weight: bold;
+}
+
+.data-options {
+  color: #4b506d;
+  font-weight: 600;
+  font-size: 0.875rem;
+  align-items: center;
+  display: flex;
+}
+
+.icon-space {
+  margin-right: 0.5rem;
+}
+.mat-paginator,
+.mat-paginator-outer-container{
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
